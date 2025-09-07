@@ -1,0 +1,12 @@
+.middle::before {
+    left: 30%;
+    transform: translateX(-50%);
+}
+.yellow-inverse{
+background: var(--accent-clr);
+color: var(--background-clr);
+}
+
+.p-btm-1{
+    padding-bottom: 1rem;
+}

@@ -1,0 +1,48 @@
+.copyright {
+    background: var(--accent-clr);
+    padding-block: 2rem;
+}
+
+.copyright p {
+    color: var(--background-clr);
+    font-weight: 500;
+}
+
+.p-block-7 {
+    padding-block: 7rem;
+}
+
+.p-block-2 {
+    padding-block: 2rem;
+}
+
+.footer-wrapper {
+    flex: 2;
+    flex-basis:300px ;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--accent-clr);
+    color: var(--background-clr);
+    border: none;
+    border-radius: 50%;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.scroll-to-top:hover {
+    background: #000;
+    color: var(--accent-clr);
+}
+
+.margin-tb{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,64 @@
+.project-image,
+.project-content {
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.project-image {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.rotate {
+    transform: rotate(-45deg);
+    transition: .3s ease-in-out;
+}
+
+.rotate:hover {
+    color: var(--accent-clr);
+    transform: rotate(0);
+}
+
+
+h3 {
+    font-size: 2rem;
+    color: var(--text-primary-clr);
+}
+
+.project-direction:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.list {
+    padding: .4rem 1rem;
+    background-color: var(--accent-clr);
+    color: var(--baclkground-clr);
+    border-radius: 0.4rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+
+
+
+
+@media screen and (max-width:790px) {
+    .list {
+        padding: .4rem 1rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .gap-5 {
+        gap: 2rem;
+    }
+
+}
