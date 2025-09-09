@@ -49,7 +49,7 @@ const Footer = () => {
                             <a href="https://github.com/laibaabbas1" className="icon-container black-inverse">
                                 <FaGithub />
                             </a>
-                            <a href="https://www.tiktok.com/@techdeploy4?_t=ZS-8zXAUpVT4K2&_r=1 " className="icon-container black-inverse">
+                            <a href="https://www.tiktok.com/@laibadevops " className="icon-container black-inverse">
                                 <FaTiktok />
                             </a>
                         </div>

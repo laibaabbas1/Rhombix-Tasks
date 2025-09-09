@@ -2,11 +2,17 @@
     left: 30%;
     transform: translateX(-50%);
 }
-.yellow-inverse{
-background: var(--accent-clr);
-color: var(--background-clr);
+
+.yellow-inverse {
+    background: var(--accent-clr);
+    color: var(--fix-clr);
+    border: .1rem solid var(--accent-clr);
 }
 
-.p-btm-1{
+.yellow-inverse:hover {
+    color: var(--accent-clr);
+}
+
+.p-btm-1 {
     padding-bottom: 1rem;
 }

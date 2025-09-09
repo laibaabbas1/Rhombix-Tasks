@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FiSun } from "react-icons/fi";
 import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
+import { IoMoonOutline } from "react-icons/io5";
 import './Navbar.css'
 
 const Navbar = () => {
@@ -9,6 +10,16 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setIsMenuActive(!isMenuActive);
+    }
+    //to chng theme
+    const [theme, setTheme] = useState('dark');
+    useEffect(() => {
+        document.documentElement.setAttribute("data-theme", theme);
+    }, [theme])
+
+    const toggletheme = () => {
+
+        setTheme((prev => (prev == 'dark' ? 'light' : 'dark')))
     }
 
     // Smooth scroll function
@@ -40,8 +51,9 @@ const Navbar = () => {
                 </ul>
 
                 <div className='flex gap-2 nav-action'>
-                    <a href="#" className='icon-container border-inverse'>
-                        <FiSun />
+                    <a href="#" className=' sun-moon border-inverse' onClick={toggletheme}>
+                        {theme === 'dark' ? <FiSun /> : <IoMoonOutline />
+                        }
                     </a>
                     <a href="#contactme" className='btn' onClick={(e) => scrollToSection('contactme', e)}>Let's Talk</a>
                     <a href="#" className='hamburger' onClick={toggleMenu}>

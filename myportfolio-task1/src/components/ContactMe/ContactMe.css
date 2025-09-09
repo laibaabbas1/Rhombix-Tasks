@@ -1,5 +1,6 @@
 form {
     flex: 2;
+    flex-basis: 300px;
 }
 
 .info {
@@ -36,7 +37,7 @@ form {
 
 h5 {
     font-size: 2.2rem;
-    color: var(--background-clr)
+    color: var(--fix-clr)
 }
 
 .rounded-b {

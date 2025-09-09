@@ -8,7 +8,7 @@ function Education() {
         return (
             <div className="card design">
                 <div className='flex gap-1 border-btm p-btm-1'>
-                    <div className='icon-container yellow-inverse'>
+                    <div className='icon-container yellow-inverse '>
                         {props.icon}
                     </div>
                     <h3>{props.title}</h3>

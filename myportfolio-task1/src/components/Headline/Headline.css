@@ -19,7 +19,7 @@
 }
 
 .container h5 {
-    color: var(--background-clr);
+    color: var(--fix-clr);
     font-size: 2.2rem;
     display: inline-block;
     margin-right: 3rem;
@@ -40,5 +40,18 @@
 @keyframes slide-left {
     100% {
         transform: translateX(-100%)
+    }
+}
+
+
+@media screen and (max-width:790px) {
+    .container h5 {
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+
+    .container .star {
+        font-size: 1.3rem;
+        margin-right: 1rem;
     }
 }

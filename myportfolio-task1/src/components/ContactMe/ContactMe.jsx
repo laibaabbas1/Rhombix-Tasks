@@ -17,21 +17,22 @@ const ContactMe = () => {
                     </h2>
                 </div>
                 <div className='flex gap-2 stretch'>
-                    <form className='mt-5'>
+                    {/* Formspree Integration */}
+                    <form className='mt-5' action="https://formspree.io/f/mjkelweg" method="POST">
                         <div className='input-container'>
-                            <label htmlFor=" name"> Name :</label>
-                            <input type="text" name='name' id='name' required autoComplete='off' placeholder='Write your name here  ' className='input' />
+                            <label htmlFor="name"> Name :</label>
+                            <input type="text" name='name' id='name' required autoComplete='off' placeholder='Write your name here' className='input' />
                         </div>
                         <div className='input-container'>
-                            <label htmlFor=" email">Email :</label>
-                            <input type="text" name='email' id='email' required autoComplete='off' placeholder='Write your name here ' className='input' />
+                            <label htmlFor="email">Email :</label>
+                            <input type="email" name='email' id='email' required autoComplete='off' placeholder='Write your email here' className='input' />
                         </div>
                         <div className='input-container'>
                             <label htmlFor="message">Your Message :</label><br />
-                            <textarea name="message" id="message" required placeholder='Write your message here.....   ' rows={9}></textarea>
+                            <textarea name="message" id="message" required placeholder='Write your message here.....' rows={9}></textarea>
                         </div>
                         <div className="mt-1">
-                            <a className='btn' href="">Send Message</a>
+                            <button type="submit" className='btn'>Send Message</button>
                         </div>
                     </form>
 
@@ -58,8 +59,6 @@ const ContactMe = () => {
                             <div className='flex gap-1'>
                                 <a href="https://www.threads.com/@laibadevops" className="icon-container black-inverse">
                                     <FaThreads />
-
-
                                 </a>
                                 <a href="https://www.instagram.com/laibadevops?igsh=MTNmdTZ4dDhiM2dmZQ==" className="icon-container black-inverse">
                                     <FaInstagram />
@@ -69,9 +68,8 @@ const ContactMe = () => {
                                 </a>
                                 <a href="https://github.com/laibaabbas1" className="icon-container black-inverse">
                                     <FaGithub />
-
                                 </a>
-                                <a href="https://www.tiktok.com/@techdeploy4?_t=ZS-8zXAUpVT4K2&_r=1" className="icon-container black-inverse">
+                                <a href="https://www.tiktok.com/@laibadevops" className="icon-container black-inverse">
                                     <FaTiktok />
                                 </a>
                             </div>

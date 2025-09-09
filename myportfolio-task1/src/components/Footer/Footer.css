@@ -4,7 +4,7 @@
 }
 
 .copyright p {
-    color: var(--background-clr);
+    color: var(--fix-clr);
     font-weight: 500;
 }
 
@@ -18,7 +18,7 @@
 
 .footer-wrapper {
     flex: 2;
-    flex-basis:300px ;
+    flex-basis: 300px;
 }
 
 .scroll-to-top {
@@ -42,7 +42,8 @@
     color: var(--accent-clr);
 }
 
-.margin-tb{
+.margin-tb {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+

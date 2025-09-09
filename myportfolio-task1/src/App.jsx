@@ -18,9 +18,10 @@ const App = () => {
       <Headline />
       <Services />
       <AboutMe />
-      <Projects />
       <Headline />
+      <Projects />
       <Education />
+      <Headline />
       <Skills />
       <ContactMe />
       <Headline />
